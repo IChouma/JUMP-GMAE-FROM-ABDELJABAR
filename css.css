@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0ch;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1 {
+    width: 30px;
+    height: 50px;
+   background-color: rgb(6, 184, 184);
+
+}
+.img2 {
+    width: 90px;
+    height: 50px;
+   background-color: rgb(6, 184, 184);
+
+}
+#game{
+   margin: 50px;
+   width: 1000px;
+   height: 300px;
+   border: 2px solid;
+   overflow: hidden;
+   background-color: rgb(6, 184, 184);
+}
+#hero {
+    width: 30px;
+    height: 50px;
+    background-color: rgb(6, 184, 184);
+
+    position: relative;
+    top: 250px;
+}
+ .animate  {
+      animation: hero 900ms ;
+}
+#obstacle {
+    width: 90px;
+    height: 50px;
+    background-color: rgb(6, 184, 184);
+
+    position: relative;
+    top: 200px;
+   left: 900px;
+   animation: obstacle 2s infinite linear;
+}
+
+@keyframes hero {
+    0%{top:250px;}
+    33%{top:170px;}
+    66%{top:170px;}
+    100%{top:250px;}
+}
+@keyframes obstacle {
+    0%{left:900px;}
+    100%{left:-100px;}
+}
